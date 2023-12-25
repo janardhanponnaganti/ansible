@@ -3,7 +3,7 @@
   vars_files:
   - variables.yaml
   vars_prompt:
-   - name: PERSON
+   -name: PERSON
     prompt: please enter your your name
     private: false #user can see what they entering
   - name: WISHES
@@ -14,8 +14,8 @@
     WISHES: "Greetings from PLAY"
   tasks:
   - name: check variables
-  vars:
-   PERSON: "JAN FROM TASK"
-   WISHES: "Greetings from TASK"
-  ansible.builtin.debug:
-    msg: "Hello {{PERSON}}, Good {{WISHES}}"
+    vars:
+      PERSON: "JAN FROM TASK"
+      WISHES: "Greetings from TASK"
+    ansible.builtin.debug:
+      msg: "Hello {{PERSON}}, Good {{WISHES}}"
