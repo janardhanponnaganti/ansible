@@ -3,8 +3,8 @@
   tasks:
   - name: print persons
     ansible.builtin.debug:
-     msg: "hello {{item}}" #item is a default keyword
-    loops:
+      msg: "hello {{item}}" #item is a default keyword
+    loop:
     - suresh
     - ram
     - krishna
