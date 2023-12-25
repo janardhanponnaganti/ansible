@@ -3,7 +3,7 @@
   vars_files:
   - variables.yaml
   vars_prompt:
-   -name: PERSON
+  - name: PERSON
     prompt: please enter your your name
     private: false #user can see what they entering
   - name: WISHES
